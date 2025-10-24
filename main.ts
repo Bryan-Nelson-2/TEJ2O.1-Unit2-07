@@ -5,9 +5,11 @@
 * This program is like cookie clicker
 */
 
+// clears the screen
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
+// variables
 let cookiesPressed = 0
 
 // add when button A is clicked 1
@@ -17,7 +19,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showNumber(cookiesPressed)
 })
 
-// resets when b is perssed
+// resets when B is perssed
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     basic.showNumber(cookiesPressed)
