@@ -10,9 +10,16 @@ basic.showIcon(IconNames.Happy)
 
 let cookiesPressed = 0
 
-// add 1
+// add when button A is clicked 1
 input.onButtonPressed(Button.A, function () {
     cookiesPressed += 1
     basic.clearScreen()
     basic.showNumber(cookiesPressed)
+})
+
+// resets when b is perssed
+input.onButtonPressed(Button.B, function () {
+    basic.clearScreen()
+    basic.showNumber(cookiesPressed)
+    cookiesPressed = 0
 })
